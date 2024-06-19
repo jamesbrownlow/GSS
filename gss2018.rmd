@@ -73,10 +73,25 @@ table1 <- xtabs(~OWNGUN + CAPPUN,data=GSSdata)
 rowPerc(table1)
 colPerc(table1)
 ```
+numerical summary shows that 75% of gun owners favor CAPPUN
+
 
 ### Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The Chi-squared test p-value is 0.0202, Hence we reject the null hypotheses and conclude that gun ownership and capital punishment are not indepedent
+
+The  fisherexact test has a p-value of .01651 hence we rject the null hypothesis, as with the chi-square test, and futhermore the odds ratio says that gun owners are 2.3 times mor likely to favor capital punishment than thos who do not own a gun 
+
+
+
 
 #  Question 2
 
@@ -139,3 +154,6 @@ Determine if a persons performance on the wordsum test (WORDSUM) is independent 
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
+#### Question 1: is gun ownership independent of opinion on capital punishment.   
+
+The summary results and the inferential results show that they ae not independent.  
