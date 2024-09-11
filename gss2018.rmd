@@ -73,6 +73,11 @@ colPerc(table1)
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 
 
@@ -93,6 +98,11 @@ Is there a difference in years of education (EDUC) between the those who did or 
 ### Descriptive Results
 
 #### Graphical Descriptive Results
+
+```{r}
+boxplot(EDUC~VOTE12,data=GSSdata)
+```
+
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
