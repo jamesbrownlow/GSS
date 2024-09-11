@@ -31,6 +31,11 @@ First question - Is opinion on the death penalty (CAPPUN) independent of gun own
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
+Question: is gun ownership independent of opinion on capital punsihment?
+
+$H_0$: gun ownership and opinion on capital punsihment are not related  
+$H_A$: gun ownership and opinion on capital punsihment are related  
+
 ##Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
